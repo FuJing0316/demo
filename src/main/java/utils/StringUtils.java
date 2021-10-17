@@ -17,19 +17,14 @@ public class StringUtils {
         System.out.println(isNullOrEmpty(b));//false
     }
 
-    public static boolean isNullOrEmpty(String str){
-        if (str == null || str.trim().length()==0){
-            return true;
-        }
-        return false;
-    }
 
     /**
      * MD5加密
+     *
      * @param str
      * @return 32位的加密字符串
      */
-    public static String getMD5str(String str){
+    public static String getMD5str(String str) {
         try {
             MessageDigest md5 = MessageDigest.getInstance("MD5");
 
@@ -48,5 +43,18 @@ public class StringUtils {
         return null;
     }
 
+
+    /**
+     * 判断字符串是否为空
+     *
+     * @param str
+     * @return
+     */
+    public static boolean isNullOrEmpty(String str) {
+        if (str == null || str.trim().length() == 0) {
+            return true;
+        }
+        return false;
+    }
 
 }
