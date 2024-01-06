@@ -9,7 +9,7 @@ package basic;
 public class BreakTest {
 
     public static void main(String[] args) {
-
+        System.out.println("master合併過來之後，新加內容，並在新分支提交");
     }
 }
 
